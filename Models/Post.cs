@@ -7,6 +7,6 @@ public class Post
     public string Content { get; set; } = null!;
     public string Summary { get; set; } = null!;
     public DateTime Published { get; set; }
-    public string CategoryId { get; set; } = null!;  // Foreign key
+    public int CategoryId { get; set; } 
     public Category Category { get; set; } = null!;  // Navigation property
 }

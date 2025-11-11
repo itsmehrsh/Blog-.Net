@@ -8,7 +8,7 @@
 {
     <div class="card post-item bg-transparent border-0 mb-5">
         <a asp-controller="Post" asp-action="Detail" asp-route-postId="@post.Id">
-            <img class="card-img-top rounded-0" src="images/post/post-lg/01.png" alt="">
+            <img class="card-img-top rounded-0" src="~/images/post/post-lg/01.png" alt="">
         </a>
         <div class="card-body px-0">
             <h2 class="card-title">
@@ -21,11 +21,11 @@
                 </li>
                 <li class="d-inline-block">
                     <span class="fas fa-list-alt text-primary"></span>
-                    <a class="ml-1" asp-controller="Category" asp-action="PostList" asp-route-categoryId="@post.CategoryId">@post.Category.Title</a>
+                    <a class="ml-1" href="#">@post.Category.Title</a>
                 </li>
             </ul>
             <p class="card-text my-4">@post.Summary</p>
-            <a asp-controller="Post" asp-action="Detail" asp-route-postId="@post.Id" class="btn btn-primary">Read More <img src="images/arrow-right.png" alt=""></a>
+            <a asp-controller="Post" asp-action="Detail" asp-route-postId="@post.Id" class="btn btn-primary">Read More <img src="~/images/arrow-right.png" alt=""></a>
         </div>
     </div>
 }

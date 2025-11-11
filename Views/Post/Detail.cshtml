@@ -1,0 +1,26 @@
+﻿@model Blog.Web.Models.Post 
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+                <div class="row justify-content-between">
+                    <div class="col-lg-10">
+                        <img class="img-fluid" src="~/images/post/post-single/01.png" alt="">
+                        <h1 class="text-white add-letter-space mt-4">@Model.Title</h1>
+                        <ul class="post-meta mt-3 mb-4">
+                            <li class="d-inline-block mr-3">
+                                <span class="fas fa-clock text-primary"></span>
+                                <a class="ml-1">@Model.Published</a>
+                            </li>
+                            <li class="d-inline-block">
+                                <span class="fas fa-list-alt text-primary"></span>
+                                <a class="ml-1" asp-controller="Category" asp-action="PostList" asp-route-categoryId="@Model.CategoryId">@Model.Category.Title</a>
+                            </li>
+                        </ul>
+                        <div class="blockquote bg-dark my-5">
+                            <p class="blockquote-text pl-2">@Model.Summary</p>
+                        </div>
+                        <p>@Model.Content</p>
+                    </div>
+                </div>

@@ -2,7 +2,7 @@
 
 public class Category
 {
-    public string Id { get; set; } = null!;
+    public int Id { get; set; }
     public string Title { get; set; } = null!;
     
     // one category can have many posts
