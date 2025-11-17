@@ -39,8 +39,9 @@
     <!-- start of sidenav -->
     <aside>
         <div class="sidenav position-sticky d-flex flex-column justify-content-between">
-            <a class="navbar-brand" href="index.html" class="logo">
+            <a class="navbar-brand" href="index.html" class="logo" style="display: flex; flex-direction: column; gap: 5px">
                 <img src="~/images/logo.png" alt="">
+                <img src="~/images/logo2.png" alt="">
             </a>
             <!-- end of navbar-brand -->
 
@@ -69,7 +70,7 @@
                     <li class="nav-item mt-3">
                         <select class="custom-select bg-transparent rounded-0 text-white shadow-none" id="pick-lang">
                             <option selected value="en">English</option>
-                            <option value="fr">French</option>
+                            <option value="fr">Persian</option>
                         </select>
                     </li>
                 </ul>
@@ -110,6 +111,7 @@
                     <div class="col-6">
                         <a href="index.html">
                             <img src="~/images/logo.png" alt="">
+                            <img src="~/images/logo2.png" alt="">
                         </a>
                     </div>
                     <div class="col-6 text-right">
@@ -172,14 +174,14 @@
                     </div>
                     <!-- end of subscription-widget -->
 
-                    <div class="widget">
+                    @*<div class="widget">
                         <div class="mb-5 text-center">
                             <h2 class="widget-title text-white d-inline-block">Featured Posts</h2>
                         </div>
                         <div class="card post-item bg-transparent border-0 mb-5">
-                            @*<a href="post-details.html">
+                            $1$<a href="post-details.html">
                                 <img class="card-img-top rounded-0" src="~/images/post/post-sm/01.png" alt="">
-                            </a>*@
+                            </a>#1#
                             <div class="card-body px-0">
                                 <h2 class="card-title">
                                     <a class="text-white opacity-75-onHover" href="post-details.html">Teaching Angular: Step-by-Step from Basics to Enterprise</a>
@@ -200,9 +202,9 @@
                         </div>
                         <!-- end of widget-post-item -->
                         <div class="card post-item bg-transparent border-0 mb-5">
-                            @*<a href="post-details.html">
+                            $1$<a href="post-details.html">
                                 <img class="card-img-top rounded-0" src="~/images/post/post-sm/02.png" alt="">
-                            </a>*@
+                            </a>#1#
                             <div class="card-body px-0">
                                 <h2 class="card-title">
                                     <a class="text-white opacity-75-onHover" href="post-details.html">From Component Library to Design System</a>
@@ -222,7 +224,7 @@
                             </div>
                         </div>
                         <!-- end of widget-post-item -->
-                    </div>
+                    </div>*@
                     <!-- end of post-items widget -->
                 </div>
             </div>
@@ -230,18 +232,18 @@
 
         <!-- start of footer -->
         <footer class="bg-dark">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-3 col-sm-6 mb-5">
-                        <h5 class="font-primary text-white mb-4">Inspirations</h5>
-                        <ul class="list-unstyled">
+            <h5 class="font-primary text-white mb-4 text-center">Made By Love By Mehrsh &#127989;</h5>
+            @* <div class="container"> *@
+                @* <div class="row text-center"> *@
+                @* <div class="col-lg-3 col-sm-6 mb-5"> *@
+                @*<ul class="list-unstyled">
                             <li><a href="#!">Privacy State</a></li>
                             <li><a href="#!">Privacy</a></li>
                             <li><a href="#!">State</a></li>
                             <li><a href="#!">Privacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 mb-5">
+                        </ul>*@
+                @* </div> *@
+                @*<div class="col-lg-3 col-sm-6 mb-5">
                         <h5 class="font-primary text-white mb-4">Templates</h5>
                         <ul class="list-unstyled">
                             <li><a href="#!">Privacy State</a></li>
@@ -267,9 +269,9 @@
                             <li><a href="#!">State</a></li>
                             <li><a href="#!">Privacy</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
+                    </div>*@
+                @* </div> *@
+            @* </div> *@
         </footer>
         <!-- end of footer -->
     </div>
