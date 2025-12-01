@@ -21,4 +21,15 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10" />
     </ItemGroup>
 
+    <ItemGroup>
+      <AdditionalFiles Include="Areas\Admin\Views\Shared\Error.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Shared\_LoginPartial.cshtml" />
+      <AdditionalFiles Include="Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\admin\" />
+    </ItemGroup>
+
 </Project>
